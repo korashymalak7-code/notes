@@ -10,7 +10,13 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "type": "Component",
+          "style": "scss",
+          "skipTests":true
+        },
+        "@schematics/angular:directive": {
+          "type": "Directive",
+          "skipTests":true
         }
       },
       "root": "",

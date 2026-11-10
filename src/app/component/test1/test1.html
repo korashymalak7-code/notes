@@ -1,0 +1,23 @@
+<h1>{{user().name}}</h1>
+<h1>{{user().age}}</h1>
+
+<button (click)="updateUserName()">update name</button> 
+<button (click)="updateUserAge()">update age</button> 
+
+<button (click)="setUser('malak',19)">set user</button> 
+
+<hr>
+
+<h1>P :{{p()}}</h1>
+<h1>Q :{{q()}}</h1>
+<h1>T :{{total()}}</h1>
+
+<button (click)="addQ()">update Q</button> 
+<button (click)="addP()">update P</button> 
+
+<hr>
+
+<p appTestDis colorName="#09c">Directive</p>
+
+<hr>
+
