@@ -1,5 +1,11 @@
-<app-test1></app-test1>
-<hr>
-@for(user of Userss() ;track user){
-    <app-user [userInfo]="user"></app-user>
+<app-user [id]="id()"></app-user>
+
+<app-user [userInfo]="data"></app-user>
+<button (click)="changeName()"> change name</button>
+
+<button (click)="ngContent()"> change ngContent</button>
+@if(isValid){
+    <p #title>hello</p>
+}@else{
+ <p #title>bay</p>
 }
